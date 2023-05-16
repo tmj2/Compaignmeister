@@ -42,7 +42,7 @@ export const HelloForm = ({ ...props }: HelloFormProps) => {
             <SpanTitle>Join </SpanTitle>for more information and access
           </S.Title>
           <StyledInputContainer>
-            <S.InputWrapper placeholder={"Enter email"} control={control} name='email' />
+            <S.InputWrapper placeholder={"Enter email"} control={} name='email' />
             <S.Actions>
               <S.Button variant='primary' type='submit'>
                 Join
