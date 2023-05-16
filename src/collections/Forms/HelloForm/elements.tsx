@@ -121,7 +121,7 @@ export const ErrorMessage = styled("span")`
 `;
 
 export const FormError = styled("h2")`
-  color: ${theme.colors.black};
+  color: ${theme.colors.bg};
   margin: 2em 0.5em 1em;
   padding: 0.2em 1em;
   border: 2px solid #ffb900;
