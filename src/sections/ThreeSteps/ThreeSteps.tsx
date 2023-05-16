@@ -1,10 +1,13 @@
 import Image from "next/image";
-import { SpanText, StyledStepsContainer } from "./elements";
-import { StyledTitleStepsContainer, StyledContainer, StyledStepsTitle } from "./elements";
+import {
+  SpanText,
+  StyledStepsContainer,
+  StyledTitleStepsContainer,
+  StyledContainer,
+  StyledStepsTitle
+} from "./elements";
 
 import { Steps } from "../../collections/Steps";
-
-import { StyledCardsContainer } from "../Campaign/elements";
 
 export const ThreeSteps = ({ steps, ...props }) => {
   return (

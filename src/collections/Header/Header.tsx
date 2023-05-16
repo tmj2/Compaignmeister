@@ -1,7 +1,7 @@
 import * as S from "./elements";
 import { StyledCardContentContainer, StyledCardImageContainer } from "../Card/elements";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/dist/client/image";
 import { StyledLogoContainer } from "./elements";
 
 export interface HeaderProps extends HTMLHeaderProps {}

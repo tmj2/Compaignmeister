@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { SectionContainer, H1 } from "components";
 import { theme } from "../../styles";
 import { prop } from "dom7";
+import Image from "next/dist/client/image";
 
 export const StyledHeroContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
@@ -100,7 +101,7 @@ export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
   padding: 71.9732% 0px 0px;
 `;
 
-export const HeroImage = styled(({ ...props }) => <img {...props} />)`
+export const HeroImage = styled(({ ...props }) => <Image {...props} />)`
   position: absolute;
   inset: 0px;
   box-sizing: border-box;

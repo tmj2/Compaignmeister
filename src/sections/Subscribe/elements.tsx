@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Button, SectionContainer, H1, H2, Button as _Button } from "components";
 import { theme } from "../../styles";
 import { prop } from "dom7";
+import Image from "next/dist/client/image";
 
 export const StyledSubscribeContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
@@ -68,7 +69,7 @@ export const SpanImgSubscribe = styled(({ ...props }) => <span {...props} />)`
   max-width: 100%;
 `;
 
-export const SubscribeImage = styled(({ ...props }) => <img {...props} />)`
+export const SubscribeImage = styled(({ ...props }) => <Image {...props} />)`
   inset: 0px;
   box-sizing: border-box;
   padding: 0px;

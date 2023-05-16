@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Button, SectionContainer, H1, H2, Button as _Button } from "components";
 import { theme } from "../../styles";
 import { prop } from "dom7";
+import Image from "next/dist/client/image";
 
 export const StyledOptimisationSectionContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
@@ -205,7 +206,7 @@ export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
   max-width: 100%;
 `;
 
-export const OptimisationImage = styled(({ ...props }) => <img {...props} />)`
+export const OptimisationImage = styled(({ ...props }) => <Image {...props} />)`
   display: block;
   max-width: 100%;
   width: initial;
