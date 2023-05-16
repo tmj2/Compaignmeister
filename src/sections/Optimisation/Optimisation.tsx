@@ -54,9 +54,9 @@ export const Optimisation = ({ ...props }) => {
                 <Span>
                   <OptimisationImage
                     src='/imgs/wheel.webp'
-                    alt='optimisation image'
                     width='640'
                     height='639'
+                    alt='optimisation image'
                   />
                 </Span>
               </SpanContainer>

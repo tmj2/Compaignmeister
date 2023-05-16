@@ -35,7 +35,7 @@ export const Hero = ({ ...props }) => {
         <ShaddowHeroImg></ShaddowHeroImg>
         <SpanImg>
           <SpanContainer></SpanContainer>
-          <HeroImage src='/imgs/heroImage.webp' alt='hero image' width='1495' height='1076' />
+          <HeroImage src='/imgs/heroImage.webp' width='1495' height='1076' alt='hero image' />
         </SpanImg>
       </StyledImageContainer>
     </StyledHeroContainer>

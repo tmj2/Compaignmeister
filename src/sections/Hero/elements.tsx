@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, SectionContainer, H1, H2, Button as _Button } from "components";
+import { SectionContainer, H1 } from "components";
 import { theme } from "../../styles";
 import { prop } from "dom7";
 
@@ -20,14 +20,6 @@ export const StyledHeroContainer = styled(({ height, ...props }) => (
   @media (min-width: 768px) {
     margin-bottom: 5rem;
   }
-`;
-
-export const StyledGetStartedBtn = styled(props => (
-  <Button {...props} variant='contained' color='main' />
-))`
-  margin-top: 4.375rem;
-  padding-top: 0;
-  padding-bottom: 0;
 `;
 
 export const StyledTitle = styled(props => <H1 {...props} />)`

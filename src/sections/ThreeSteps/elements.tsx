@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CustomLink, H1, H2, H3, H4, H6, Paragraph, SectionContainer } from "components";
+import { H1, SectionContainer } from "components";
 import { theme } from "../../styles";
 
 export const StyledContainer = styled(({ ...props }) => <SectionContainer {...props} />)`

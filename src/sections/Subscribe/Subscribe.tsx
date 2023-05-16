@@ -20,7 +20,7 @@ export const Subscribe = ({ ...props }) => {
         <HelloForm />
         <StyledImageSubscribeContainer>
           <SpanImgSubscribe>
-            <SubscribeImage src='/imgs/lines.webp' alt='subscribe image' width='88' height='373' />
+            <SubscribeImage src='/imgs/lines.webp' width='88' height='373' alt='subscribe image' />
           </SpanImgSubscribe>
         </StyledImageSubscribeContainer>
       </StyledTextContainer>
