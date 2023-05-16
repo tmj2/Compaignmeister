@@ -10,7 +10,7 @@ import {
   SpanContainer,
   HeroImage
 } from "./elements";
-import { HelloForm } from "../../collections";
+//import { HelloForm } from "../../collections";
 import Image from "next/image";
 
 export const Hero = ({ ...props }) => {
@@ -28,8 +28,6 @@ export const Hero = ({ ...props }) => {
           We provide you and your teams with actionable insights to optimise your campaigns before,
           during and after its runtime across all channels, brands and countries.
         </StyledDescription>
-
-        <HelloForm />
       </StyledTextContainer>
       <StyledImageContainer>
         <ShaddowHeroImg></ShaddowHeroImg>

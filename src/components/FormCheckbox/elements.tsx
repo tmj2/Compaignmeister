@@ -12,7 +12,7 @@ export const InputWrapper = styled("div")`
 `;
 
 export const Label = styled("label")`
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.bg};
   white-space: nowrap;
   font-family: "Crimson Text", Arial, sans-serif;
   font-size: 18px;

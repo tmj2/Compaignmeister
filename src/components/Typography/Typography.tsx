@@ -1,6 +1,4 @@
 import * as S from "./elements";
-import { StyledCustomLink } from "../../sections/Campaign/elements";
-import { StyledCustomParagraph } from "../../sections/Campaign/elements";
 
 export interface H1Props extends HTMLHeadingProps {
   variant?: "regular";
@@ -54,24 +52,11 @@ export interface ParagraphProps extends HTMLHeadingProps {
   variant?: "regular";
 }
 
-export const Paragraph = ({ variant = "regular", ...props }: ParagraphProps) => {
-  return <S.Paragraph {...props} variant={variant} />;
-};
-
-export const CustomLink = ({ ...props }) => {
-  return <StyledCustomLink {...props} />;
-};
-
-export const CustomParagraph = ({ ...props }) => {
-  return <StyledCustomParagraph {...props} />;
-};
-
 export const Typography = {
   H1,
   H2,
   H3,
   H4,
   H5,
-  H6,
-  Paragraph
+  H6
 };

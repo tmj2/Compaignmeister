@@ -31,7 +31,7 @@ const buttonStyles: Record<
     transition: color 500ms ease, background-color 500ms ease;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.black};
+      color: ${({ theme }) => theme.colors.bg};
       background-color: ${({ theme }) => theme.colors.white};
     }
   `

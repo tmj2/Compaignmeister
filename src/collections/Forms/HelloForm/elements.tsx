@@ -9,10 +9,9 @@ import {
   FormCheckboxProps
 } from "components";
 import { theme } from "styles";
-import { HelloFormProps } from "./HelloForm";
 import { HelloRequest } from "pages/api/hello";
 
-export const Form = styled("form")<HelloFormProps>`
+export const Form = styled("form")`
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;

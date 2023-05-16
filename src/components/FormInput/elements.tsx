@@ -11,7 +11,7 @@ export const InputWrapper = styled("div")`
 
 export const Label = styled("label")(
   ({ theme: { colors } }) => css`
-    color: ${colors.black};
+    color: ${colors.bg};
     white-space: nowrap;
     font-family: "Crimson Text", Arial, sans-serif;
     font-size: 18px;
@@ -39,7 +39,7 @@ export const Input = styled("input")`
   justify-content: center;
   border: unset;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.bg};
   outline: none;
   background: transparent;
   padding: 0.8em;
@@ -50,7 +50,7 @@ export const Input = styled("input")`
   border-radius: 50px;
 
   &:focus {
-    border: 1px solid ${({ theme }) => theme.colors.black};
+    border: 1px solid ${({ theme }) => theme.colors.bg};
     box-shadow: 0 0 4px 0 ${({ theme }) => theme.colors.primary};
   }
 

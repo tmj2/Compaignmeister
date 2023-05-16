@@ -13,7 +13,7 @@ export const Header = ({ ...props }: HeaderProps) => {
         <Link href='#'>
           <Image src='/imgs/logo.webp' alt='logo image' width='221' height='29' />
         </Link>
-        <S.Button variant='primary' type='submit' classname='ml-auto'>
+        <S.Button variant='primary' type='submit'>
           Login
         </S.Button>
       </StyledLogoContainer>

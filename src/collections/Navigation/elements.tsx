@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { SectionContainer, CustomLink, CustomParagraph } from "components";
+import { SectionContainer } from "components";
 import { theme } from "../../styles";
 import { Navigation } from "./Navigation";
 

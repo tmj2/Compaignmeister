@@ -1,6 +1,11 @@
 import Image from "next/image";
-import { SpanText, StyledCardsContainer } from "./elements";
-import { StyledTitleCampaignContainer, StyledContainer, StyledCampaignTitle } from "./elements";
+import {
+  SpanText,
+  StyledCardsContainer,
+  StyledTitleCampaignContainer,
+  StyledContainer,
+  StyledCampaignTitle
+} from "./elements";
 
 import { Card } from "../../collections/Card";
 

@@ -1,12 +1,5 @@
-import { StartIcon } from "assets";
-import { HelloForm } from "collections";
 import { NextPage } from "next";
-import { Hero, Campaign } from "sections";
-import { SectionContainer } from "components";
-import Image from "next/image";
-import { Optimisation } from "../sections/Optimisation";
-import { ThreeSteps } from "../sections/ThreeSteps";
-import { Subscribe } from "../sections/Subscribe";
+import { Hero, Campaign, Optimisation, ThreeSteps, Subscribe } from "sections";
 
 const campaignProps = {
   cards: [
