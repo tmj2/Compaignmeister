@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FooterProps } from "./Footer";
-import { theme } from "../../styles";
+import { theme } from "styles";
 
 export const Footer = styled("footer")<FooterProps>`
   padding: 2.5rem;
@@ -14,7 +14,7 @@ export const Footer = styled("footer")<FooterProps>`
     padding-right: 8rem;
   }
 `;
-export const FooterContainer = styled(({ ...props }) => <div {...props} />)`
+export const FooterContainer = styled("div")`
   justify-content: space-between;
   width: 100%;
   display: flex;
@@ -25,7 +25,7 @@ export const FooterContainer = styled(({ ...props }) => <div {...props} />)`
   }
 `;
 
-export const FooterLogoContainer = styled(({ ...props }) => <div {...props} />)`
+export const FooterLogoContainer = styled("div")`
   align-items: flex-start;
   display: flex;
 
@@ -34,7 +34,7 @@ export const FooterLogoContainer = styled(({ ...props }) => <div {...props} />)`
   }
 `;
 
-export const FooterLogoSimpleContainer = styled(({ ...props }) => <div {...props} />)`
+export const FooterLogoSimpleContainer = styled("div")`
   display: flex;
 
   @media (min-width: 1024px) {
@@ -45,7 +45,7 @@ export const FooterLogoSimpleContainer = styled(({ ...props }) => <div {...props
   }
 `;
 
-export const FooterMenuNavContainer = styled(({ ...props }) => <ul {...props} />)`
+export const FooterMenuNavContainer = styled("ul")`
   flex-direction: column;
   display: flex;
   @media (min-width: 768px) {
@@ -56,18 +56,21 @@ export const FooterMenuNavContainer = styled(({ ...props }) => <ul {...props} />
     margin-bottom: 0;
   }
 `;
-export const FooterMenuLegContainer = styled(({ ...props }) => <ul {...props} />)`
+
+export const FooterMenuLegContainer = styled("ul")`
   flex-direction: column;
   display: flex;
 `;
-export const FooterMenuNav = styled(({ ...props }) => <nav {...props} />)`
+
+export const FooterMenuNav = styled("nav")`
   display: flex;
 
   @media (min-width: 768px) {
     flex-direction: row;
   }
 `;
-export const FooterCopyright = styled(({ ...props }) => <p {...props} />)`
+
+export const FooterCopyright = styled("p")`
   line-height: 14.4px;
   font-weight: 500;
   font-size: 12px;
@@ -76,7 +79,8 @@ export const FooterCopyright = styled(({ ...props }) => <p {...props} />)`
     margin-left: auto;
   }
 `;
-export const FooterImageContainer = styled(({ ...props }) => <div {...props} />)`
+
+export const FooterImageContainer = styled("div")`
   border-right: 2px solid #6b9cff36;
   @media (min-width: 1024px) {
     padding-right: 5rem;
@@ -92,11 +96,11 @@ export const FooterImageContainer = styled(({ ...props }) => <div {...props} />)
   }
 `;
 
-export const FooterLogo = styled(({ ...props }) => <div {...props} />)`
+export const FooterLogo = styled("div")`
   cursor: pointer;
 `;
 
-export const FooterTitle = styled(({ ...props }) => <h2 {...props} />)`
+export const FooterTitle = styled("h2")`
   line-height: 14.4px;
   font-weight: 500;
   font-size: 12px;
@@ -104,13 +108,15 @@ export const FooterTitle = styled(({ ...props }) => <h2 {...props} />)`
     padding-left: 5rem;
   }
 `;
-export const FooterLegTitle = styled(({ ...props }) => <h3 {...props} />)`
+
+export const FooterLegTitle = styled("h3")`
   line-height: 24px;
   font-size: 20px;
   margin-bottom: 2rem;
   font-weight: 500;
 `;
-export const FooterNavTitle = styled(({ ...props }) => <h3 {...props} />)`
+
+export const FooterNavTitle = styled("h3")`
   line-height: 24px;
   font-size: 20px;
   margin-bottom: 2rem;

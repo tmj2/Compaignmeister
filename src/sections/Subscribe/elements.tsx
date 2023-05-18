@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import { Button, SectionContainer, H1, H2, Button as _Button } from "components";
-import { theme } from "../../styles";
+import { SectionContainer, H1 } from "components";
+import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledSubscribeContainer = styled(({ height, ...props }) => (
-  <SectionContainer {...props} />
-))`
+export const StyledSubscribeContainer = styled("SectionContainer")`
   margin-left: 0px;
   margin-right: 0px;
   flex-direction: row;
@@ -23,7 +21,7 @@ export const StyledSubscribeContainer = styled(({ height, ...props }) => (
   }
 `;
 
-export const StyledTitle = styled(props => <H1 {...props} />)`
+export const StyledTitle = styled("H1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -33,7 +31,7 @@ export const StyledTitle = styled(props => <H1 {...props} />)`
   z-index: 10;
 `;
 
-export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledTextContainer = styled("div")`
   color: ${theme.colors.white};
   font-family: "Barlow", Arial, sans-serif;
   width: 544px;
@@ -43,18 +41,18 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   position: relative;
 `;
 
-export const StyledImageSubscribeContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledImageSubscribeContainer = styled("div")`
   top: -164px;
   left: calc(50% - 44px);
   position: absolute;
   z-index: 0;
 `;
 
-export const Span = styled(({ ...props }) => <span {...props} />)`
+export const Span = styled("span")`
   color: ${theme.colors.white};
 `;
 
-export const SpanImgSubscribe = styled(({ ...props }) => <span {...props} />)`
+export const SpanImgSubscribe = styled("span")`
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -69,7 +67,7 @@ export const SpanImgSubscribe = styled(({ ...props }) => <span {...props} />)`
   max-width: 100%;
 `;
 
-export const SubscribeImage = styled(({ ...props }) => <Image {...props} />)`
+export const SubscribeImage = styled("Image")`
   inset: 0px;
   box-sizing: border-box;
   padding: 0px;

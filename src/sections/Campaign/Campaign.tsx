@@ -1,28 +1,19 @@
-import Image from "next/image";
-import {
-  SpanText,
-  StyledCardsContainer,
-  StyledTitleCampaignContainer,
-  StyledContainer,
-  StyledCampaignTitle
-} from "./elements";
-
-import { Card } from "../../collections/Card";
+import * as S from "./elements";
 
 export const Campaign = ({ cards, ...props }) => {
   return (
-    <StyledContainer {...props}>
-      <StyledTitleCampaignContainer>
-        <StyledCampaignTitle>
-          CampaignMeisters <SpanText>building blocks </SpanText>for campaign optimisation
-        </StyledCampaignTitle>
-      </StyledTitleCampaignContainer>
+    <S.StyledContainer {...props}>
+      <S.StyledTitleCampaignContainer>
+        <S.StyledCampaignTitle>
+          CampaignMeisters <S.SpanText>building blocks </S.SpanText>for campaign optimisation
+        </S.StyledCampaignTitle>
+      </S.StyledTitleCampaignContainer>
 
-      <StyledCardsContainer {...props}>
+      <S.StyledCardsContainer {...props}>
         {cards.map(i => (
-          <Card id={i.id} image={i.image} title={i.title} content={i.content} />
+          <S.Card id={i.id} image={i.image} title={i.title} content={i.content} />
         ))}
-      </StyledCardsContainer>
-    </StyledContainer>
+      </S.StyledCardsContainer>
+    </S.StyledContainer>
   );
 };

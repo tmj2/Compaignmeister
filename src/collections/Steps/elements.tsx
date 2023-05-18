@@ -1,9 +1,8 @@
 import styled from "styled-components";
-
 import { SectionContainer } from "components";
 import { theme } from "../../styles";
 
-export const StyledStepsTitle = styled(({ ...props }) => <div {...props} />)`
+export const StyledStepsTitle = styled("div")`
   line-height: 22.4px;
   color: ${theme.colors.yellow};
   font-weight: 500;
@@ -11,7 +10,8 @@ export const StyledStepsTitle = styled(({ ...props }) => <div {...props} />)`
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
 `;
-export const StyledStepsSubTitle = styled(({ ...props }) => <h3 {...props} />)`
+
+export const StyledStepsSubTitle = styled("h3")`
   line-height: 22.4px;
   color: ${theme.colors.white};
   font-weight: 600;
@@ -20,7 +20,7 @@ export const StyledStepsSubTitle = styled(({ ...props }) => <h3 {...props} />)`
   margin-top: 1.25rem;
 `;
 
-export const StyledStepsContainer = styled(({ ...props }) => <SectionContainer {...props} />)`
+export const StyledStepsContainer = styled("SectionContainer")`
   background-color: ${theme.colors.primary};
   width: 33.3%;
   padding: 60px;
@@ -47,28 +47,28 @@ export const StyledStepsContainer = styled(({ ...props }) => <SectionContainer {
   }
 `;
 
-export const StyledStepsImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledStepsImageContainer = styled("div")`
   justify-content: center;
   align-items: flex-end;
   width: 100%;
   display: flex;
 `;
 
-export const StyledStepsContent = styled(({ ...props }) => <p {...props} />)`
+export const StyledStepsContent = styled("p")`
   color: ${theme.colors.white};
   line-height: 22.4px;
   font-weight: 400;
   font-size: 16px;
 `;
 
-export const StyledStepsContentContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledStepsContentContainer = styled("div")`
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   display: flex;
 `;
 
-export const StyledStepsPointsContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledStepsPointsContainer = styled("div")`
   background-color: ${theme.colors.bg};
   border-radius: 1.5rem;
   justify-content: center;
@@ -78,7 +78,7 @@ export const StyledStepsPointsContainer = styled(({ ...props }) => <div {...prop
   display: flex;
 `;
 
-export const Point = styled(({ ...props }) => <p {...props} />)`
+export const Point = styled("p")`
   color: ${theme.colors.yellow};
   font-weight: 700;
   text-align: center;

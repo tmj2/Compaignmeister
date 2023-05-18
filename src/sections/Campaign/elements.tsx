@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { H1, SectionContainer } from "components";
-import { theme } from "../../styles";
+import { SectionContainer } from "components";
+import { theme } from "styles";
 
-export const StyledContainer = styled(({ ...props }) => <SectionContainer {...props} />)`
+export const StyledContainer = styled("SectionContainer")`
   // max-width: 1440px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -16,7 +16,7 @@ export const StyledContainer = styled(({ ...props }) => <SectionContainer {...pr
   position: relative;
 `;
 
-export const StyledCampaignTitle = styled(props => <H1 {...props} />)`
+export const StyledCampaignTitle = styled("h1")`
   color: ${theme.colors.white};
   line-height: 38.4px;
   font-weight: 500;
@@ -27,14 +27,14 @@ export const StyledCampaignTitle = styled(props => <H1 {...props} />)`
   }
 `;
 
-export const SpanText = styled(({ ...props }) => <span {...props} />)`
+export const SpanText = styled("span")`
   color: ${theme.colors.yellow};
   border: 0px;
   margin: 0px;
   padding: 0px;
 `;
 
-export const StyledTitleCampaignContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledTitleCampaignContainer = styled("div")`
   line-height: 2.25rem;
   text-align: center;
   border-top-left-radius: 1rem;
@@ -50,7 +50,7 @@ export const StyledTitleCampaignContainer = styled(({ ...props }) => <div {...pr
   }
 `;
 
-export const StyledCardsContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledCardsContainer = styled("div")`
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   justify-content: space-between;

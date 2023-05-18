@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import { Button, SectionContainer, H1, H2, Button as _Button } from "components";
-import { theme } from "../../styles";
+import { SectionContainer, H1, H2 } from "components";
+import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledOptimisationSectionContainer = styled(({ height, ...props }) => (
-  <SectionContainer {...props} />
-))`
+export const StyledOptimisationSectionContainer = styled("SectionContainer")`
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   justify-content: center;
@@ -25,7 +23,7 @@ export const StyledOptimisationSectionContainer = styled(({ height, ...props }) 
   }
 `;
 
-export const StyledOptimisationContainer = styled(props => <div {...props} />)`
+export const StyledOptimisationContainer = styled("div")`
   line-height: 2.25rem;
   text-align: center;
   padding: 2.5rem;
@@ -41,7 +39,8 @@ export const StyledOptimisationContainer = styled(props => <div {...props} />)`
     padding-bottom: 80px;
   }
 `;
-export const StyledOptimisationContentContainer = styled(props => <div {...props} />)`
+
+export const StyledOptimisationContentContainer = styled("div")`
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   flex-direction: column;
@@ -60,7 +59,8 @@ export const StyledOptimisationContentContainer = styled(props => <div {...props
     padding-right: 69px;
   }
 `;
-export const StyledOptimisationCardContainer = styled(props => <div {...props} />)`
+
+export const StyledOptimisationCardContainer = styled("div")`
   gap: 2.5rem;
   justify-content: space-between;
   width: 100%;
@@ -74,13 +74,13 @@ export const StyledOptimisationCardContainer = styled(props => <div {...props} /
   }
 `;
 
-export const StyledOptimisationTitle = styled(props => <H1 {...props} />)`
+export const StyledOptimisationTitle = styled("H1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
 `;
 
-export const StyledOptimisationTitleContainer = styled(props => <div {...props} />)`
+export const StyledOptimisationTitleContainer = styled("div")`
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 3.5rem;
@@ -92,14 +92,14 @@ export const StyledOptimisationTitleContainer = styled(props => <div {...props} 
   }
 `;
 
-export const StyledOptimisationLearningText = styled(props => <div {...props} />)`
+export const StyledOptimisationLearningText = styled("div")`
   flex-direction: column;
   width: 100%;
   height: 100%;
   display: flex;
 `;
 
-export const StyledOptimisationStartText = styled(props => <div {...props} />)`
+export const StyledOptimisationStartText = styled("div")`
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -109,7 +109,7 @@ export const StyledOptimisationStartText = styled(props => <div {...props} />)`
   }
 `;
 
-export const StyledOptimisationLearningTitle = styled(props => <H2 {...props} />)`
+export const StyledOptimisationLearningTitle = styled("H2")`
   color: ${theme.colors.yellow};
   line-height: 34px;
   font-weight: 500;
@@ -117,14 +117,14 @@ export const StyledOptimisationLearningTitle = styled(props => <H2 {...props} />
   margin-bottom: 1.25rem;
 `;
 
-export const StyledOptimisationLearningDescription = styled(props => <p {...props} />)`
+export const StyledOptimisationLearningDescription = styled("p")`
   color: ${theme.colors.white};
   line-height: 22.4px;
   font-weight: 400;
   font-size: 16px;
 `;
 
-export const StyledOptimisationLearningContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledOptimisationLearningContainer = styled("div")`
   gap: 1.25rem;
   flex-direction: column;
   width: 100%;
@@ -138,7 +138,7 @@ export const StyledOptimisationLearningContainer = styled(({ ...props }) => <div
   }
 `;
 
-export const StyledOptimisationStartContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledOptimisationStartContainer = styled("div")`
   gap: 2.5rem;
   display: flex;
 
@@ -150,7 +150,8 @@ export const StyledOptimisationStartContainer = styled(({ ...props }) => <div {.
     }
   }
 `;
-export const StyledOptimisationFlightContainer = styled(({ ...props }) => <div {...props} />)`
+
+export const StyledOptimisationFlightContainer = styled("div")`
   gap: 1.25rem;
   flex-direction: column;
   width: 100%;
@@ -164,7 +165,7 @@ export const StyledOptimisationFlightContainer = styled(({ ...props }) => <div {
   }
 `;
 
-export const StyledOptimisationImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledOptimisationImageContainer = styled("div")`
   display: flex;
 
   @media (min-width: 768px) {
@@ -172,7 +173,7 @@ export const StyledOptimisationImageContainer = styled(({ ...props }) => <div {.
   }
 `;
 
-export const Span = styled(({ ...props }) => <span {...props} />)`
+export const Span = styled("span")`
   box-sizing: border-box;
   width: initial;
   height: initial;
@@ -185,6 +186,7 @@ export const Span = styled(({ ...props }) => <span {...props} />)`
 `;
 
 export const SpanText = styled(({ ...props }) => <span {...props} />)`
+  export const StyledTextContainer = styled("span")\`
   color: ${theme.colors.white};
   border: 0px;
   margin: 0px;
@@ -192,6 +194,7 @@ export const SpanText = styled(({ ...props }) => <span {...props} />)`
 `;
 
 export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
+  export const StyledTextContainer = styled("span")\`
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -207,6 +210,7 @@ export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
 `;
 
 export const OptimisationImage = styled(({ ...props }) => <Image {...props} />)`
+  export const StyledTextContainer = styled("Image")\`
   display: block;
   max-width: 100%;
   width: initial;

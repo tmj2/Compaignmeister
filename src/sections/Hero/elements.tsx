@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import { SectionContainer, H1 } from "components";
-import { theme } from "../../styles";
+import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledHeroContainer = styled(({ height, ...props }) => (
-  <SectionContainer {...props} />
-))`
+export const StyledHeroContainer = styled("SectionContainer")`
   margin-left: 0px;
   margin-right: 0px;
   flex-direction: row;
@@ -23,7 +21,7 @@ export const StyledHeroContainer = styled(({ height, ...props }) => (
   }
 `;
 
-export const StyledTitle = styled(props => <H1 {...props} />)`
+export const StyledTitle = styled("H1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -31,14 +29,14 @@ export const StyledTitle = styled(props => <H1 {...props} />)`
   line-height: 48px;
 `;
 
-export const StyledDescription = styled(props => <p {...props} />)`
+export const StyledDescription = styled("p")`
   margin-bottom: 3.5rem;
   font-size: 20px;
   font-weight: 400;
   line-height: 38px;
 `;
 
-export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledTextContainer = styled("div")`
   color: ${theme.colors.white};
   font-family: "Barlow", Arial, sans-serif;
   margin-right: 5rem;
@@ -48,22 +46,22 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   flex-direction: column;
 `;
 
-export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledCTAContainer = styled("div")`
   display: flex;
 `;
 
-export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledImageContainer = styled("div")`
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   position: relative;
 `;
 
-export const Span = styled(({ ...props }) => <span {...props} />)`
+export const Span = styled("div")`
   color: ${theme.colors.white};
 `;
 
-export const SpanImg = styled(({ ...props }) => <span {...props} />)`
+export const SpanImg = styled("div")`
   box-sizing: border-box;
   display: block;
   overflow: hidden;
@@ -76,7 +74,8 @@ export const SpanImg = styled(({ ...props }) => <span {...props} />)`
   padding: 0px;
   position: relative;
 `;
-export const ShaddowHeroImg = styled(({ ...props }) => <div {...props} />)`
+
+export const ShaddowHeroImg = styled("div")`
   position: absolute;
   z-index: 0;
   transform: matrix(0.5, 0.5, -0.5, 0.5, 0, 0);
@@ -89,7 +88,8 @@ export const ShaddowHeroImg = styled(({ ...props }) => <div {...props} />)`
   height: 700px;
   left: calc(50% - 350px);
 `;
-export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
+
+export const SpanContainer = styled("div")`
   box-sizing: border-box;
   display: block;
   width: initial;
@@ -101,7 +101,7 @@ export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
   padding: 71.9732% 0px 0px;
 `;
 
-export const HeroImage = styled(({ ...props }) => <Image {...props} />)`
+export const HeroImage = styled("Image")`
   position: absolute;
   inset: 0px;
   box-sizing: border-box;

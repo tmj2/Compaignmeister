@@ -1,27 +1,24 @@
-import {
-  StyledSubscribeContainer,
-  StyledTextContainer,
-  StyledTitle,
-  Span,
-  StyledImageSubscribeContainer,
-  SpanImgSubscribe,
-  SubscribeImage
-} from "./elements";
+import * as S from "./elements";
 
 export const Subscribe = ({ ...props }) => {
   return (
-    <StyledSubscribeContainer>
-      <StyledTextContainer>
-        <StyledTitle>
-          <Span>Start </Span>optimising <Span>now</Span>
-        </StyledTitle>
+    <S.StyledSubscribeContainer>
+      <S.StyledTextContainer>
+        <S.StyledTitle>
+          <S.Span>Start </S.Span>optimising <S.Span>now</S.Span>
+        </S.StyledTitle>
 
-        <StyledImageSubscribeContainer>
-          <SpanImgSubscribe>
-            <SubscribeImage src='/imgs/lines.webp' width='88' height='373' alt='subscribe image' />
-          </SpanImgSubscribe>
-        </StyledImageSubscribeContainer>
-      </StyledTextContainer>
-    </StyledSubscribeContainer>
+        <S.StyledImageSubscribeContainer>
+          <S.SpanImgSubscribe>
+            <S.SubscribeImage
+              src='/imgs/lines.webp'
+              width='88'
+              height='373'
+              alt='subscribe image'
+            />
+          </S.SpanImgSubscribe>
+        </S.StyledImageSubscribeContainer>
+      </S.StyledTextContainer>
+    </S.StyledSubscribeContainer>
   );
 };

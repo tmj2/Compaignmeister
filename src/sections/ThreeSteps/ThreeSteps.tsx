@@ -1,25 +1,16 @@
-import Image from "next/image";
-import {
-  SpanText,
-  StyledStepsContainer,
-  StyledTitleStepsContainer,
-  StyledContainer,
-  StyledStepsTitle
-} from "./elements";
-
-import { Steps } from "../../collections/Steps";
+import * as S from "./elements";
 
 export const ThreeSteps = ({ steps, ...props }) => {
   return (
-    <StyledContainer {...props}>
-      <StyledTitleStepsContainer>
-        <StyledStepsTitle>
-          It only takes <SpanText> three easy steps </SpanText> to start optimising
-        </StyledStepsTitle>
-      </StyledTitleStepsContainer>
-      <StyledStepsContainer {...props}>
+    <S.StyledContainer {...props}>
+      <S.StyledTitleStepsContainer>
+        <S.StyledStepsTitle>
+          It only takes <S.SpanText> three easy steps </S.SpanText> to start optimising
+        </S.StyledStepsTitle>
+      </S.StyledTitleStepsContainer>
+      <S.StyledStepsContainer {...props}>
         {steps.map(i => (
-          <Steps
+          <S.Steps
             id={i.id}
             image={i.image}
             title={i.title}
@@ -27,7 +18,7 @@ export const ThreeSteps = ({ steps, ...props }) => {
             content={i.content}
           />
         ))}
-      </StyledStepsContainer>
-    </StyledContainer>
+      </S.StyledStepsContainer>
+    </S.StyledContainer>
   );
 };

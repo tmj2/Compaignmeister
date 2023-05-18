@@ -1,4 +1,4 @@
-import * as S from "elements";
+import * as S from "./elements";
 import Image from "next/image";
 
 export const Card = ({ id, title, content, image, ...props }) => {
