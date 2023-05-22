@@ -1,4 +1,5 @@
 import * as S from "./elements";
+import { Card } from "collections";
 
 export const Campaign = ({ cards, ...props }) => {
   return (
@@ -11,7 +12,7 @@ export const Campaign = ({ cards, ...props }) => {
 
       <S.StyledCardsContainer {...props}>
         {cards.map(i => (
-          <S.Card id={i.id} image={i.image} title={i.title} content={i.content} />
+          <Card id={i.id} image={i.image} title={i.title} content={i.content} />
         ))}
       </S.StyledCardsContainer>
     </S.StyledContainer>

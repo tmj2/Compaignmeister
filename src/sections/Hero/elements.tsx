@@ -4,7 +4,7 @@ import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledHeroContainer = styled("SectionContainer")`
+export const StyledHeroContainer = styled("div")`
   margin-left: 0px;
   margin-right: 0px;
   flex-direction: row;
@@ -12,7 +12,8 @@ export const StyledHeroContainer = styled("SectionContainer")`
   margin-top: 3rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  justify-content: center;
+  //justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   display: flex;
@@ -21,7 +22,7 @@ export const StyledHeroContainer = styled("SectionContainer")`
   }
 `;
 
-export const StyledTitle = styled("H1")`
+export const StyledTitle = styled("h1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -51,7 +52,7 @@ export const StyledCTAContainer = styled("div")`
 `;
 
 export const StyledImageContainer = styled("div")`
-  width: 100%;
+  width: 50%;
   margin-left: 0;
   margin-right: 0;
   position: relative;
@@ -101,7 +102,7 @@ export const SpanContainer = styled("div")`
   padding: 71.9732% 0px 0px;
 `;
 
-export const HeroImage = styled("Image")`
+export const HeroImage = styled("img")`
   position: absolute;
   inset: 0px;
   box-sizing: border-box;

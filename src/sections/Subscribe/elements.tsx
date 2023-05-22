@@ -4,7 +4,7 @@ import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledSubscribeContainer = styled("SectionContainer")`
+export const StyledSubscribeContainer = styled("div")`
   margin-left: 0px;
   margin-right: 0px;
   flex-direction: row;
@@ -21,7 +21,7 @@ export const StyledSubscribeContainer = styled("SectionContainer")`
   }
 `;
 
-export const StyledTitle = styled("H1")`
+export const StyledTitle = styled("h1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -44,7 +44,7 @@ export const StyledTextContainer = styled("div")`
 export const StyledImageSubscribeContainer = styled("div")`
   top: -164px;
   left: calc(50% - 44px);
-  position: absolute;
+  //  position: absolute;
   z-index: 0;
 `;
 
@@ -67,14 +67,14 @@ export const SpanImgSubscribe = styled("span")`
   max-width: 100%;
 `;
 
-export const SubscribeImage = styled("Image")`
+export const SubscribeImage = styled("img")`
   inset: 0px;
   box-sizing: border-box;
   padding: 0px;
   border: none;
   margin: auto;
   display: block;
-  min-width: 100%;
+  //min-width: 100%;
   max-width: 100%;
   min-height: 100%;
   max-height: 100%;

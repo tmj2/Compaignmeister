@@ -20,7 +20,7 @@ export const StyledStepsSubTitle = styled("h3")`
   margin-top: 1.25rem;
 `;
 
-export const StyledStepsContainer = styled("SectionContainer")`
+export const StyledStepsContainer = styled("div")`
   background-color: ${theme.colors.primary};
   width: 33.3%;
   padding: 60px;

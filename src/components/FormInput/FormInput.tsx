@@ -26,19 +26,16 @@ export const FormInput = <T extends FieldValues = any>({
 
   return (
     <S.Container {...props}>
-      <S.InputWrapper>
-        {label && <S.Label htmlFor={name}>{label}</S.Label>}
-        <S.Input
-          {...props}
-          spellCheck={false}
-          onChange={onChange}
-          onBlur={onBlur}
-          value={value}
-          name={name}
-          id={name}
-          ref={ref}
-        />
-      </S.InputWrapper>
+      <S.Input
+        {...props}
+        spellCheck={false}
+        onChange={onChange}
+        onBlur={onBlur}
+        value={value}
+        name={name}
+        id={name}
+        ref={ref}
+      />
       {error && <S.ErrorText>{error.message}</S.ErrorText>}
     </S.Container>
   );

@@ -5,9 +5,9 @@ import { Navigation } from "../Navigation";
 
 export interface FooterProps extends HTMLFooterProps {}
 
-export const Footer = ({ navigation, ...props }, { legal, ...rest }) => {
+export const Footer = ({ navigation, ...props }, { legal }) => {
   return (
-    <S.Footer {...props}>
+    <S.Footer>
       <S.FooterContainer>
         <S.FooterLogoContainer>
           <S.FooterLogoSimpleContainer>
@@ -24,15 +24,9 @@ export const Footer = ({ navigation, ...props }, { legal, ...rest }) => {
         <S.FooterMenuNav>
           <S.FooterMenuNavContainer>
             <S.FooterNavTitle>Navigation</S.FooterNavTitle>
-            {navigation.map(i => (
-              <Navigation id={i.id} title={i.title} link={i.link} />
-            ))}
           </S.FooterMenuNavContainer>
           <S.FooterMenuLegContainer>
             <S.FooterLegTitle>Legal</S.FooterLegTitle>
-            {navigation.map(i => (
-              <Navigation id={i.id} title={i.title} link={i.link} />
-            ))}
           </S.FooterMenuLegContainer>
         </S.FooterMenuNav>
       </S.FooterContainer>

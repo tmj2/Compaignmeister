@@ -1,4 +1,5 @@
 import * as S from "./elements";
+import { ContactForm } from "collections";
 
 export const Subscribe = ({ ...props }) => {
   return (
@@ -16,6 +17,7 @@ export const Subscribe = ({ ...props }) => {
               height='373'
               alt='subscribe image'
             />
+            <ContactForm />
           </S.SpanImgSubscribe>
         </S.StyledImageSubscribeContainer>
       </S.StyledTextContainer>

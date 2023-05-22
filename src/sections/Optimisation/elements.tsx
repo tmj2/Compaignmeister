@@ -4,7 +4,7 @@ import { theme } from "styles";
 import { prop } from "dom7";
 import Image from "next/dist/client/image";
 
-export const StyledOptimisationSectionContainer = styled("SectionContainer")`
+export const StyledOptimisationSectionContainer = styled("div")`
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   justify-content: center;
@@ -74,7 +74,7 @@ export const StyledOptimisationCardContainer = styled("div")`
   }
 `;
 
-export const StyledOptimisationTitle = styled("H1")`
+export const StyledOptimisationTitle = styled("h1")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -109,7 +109,7 @@ export const StyledOptimisationStartText = styled("div")`
   }
 `;
 
-export const StyledOptimisationLearningTitle = styled("H2")`
+export const StyledOptimisationLearningTitle = styled("h2")`
   color: ${theme.colors.yellow};
   line-height: 34px;
   font-weight: 500;
@@ -185,16 +185,14 @@ export const Span = styled("span")`
   max-width: 100%;
 `;
 
-export const SpanText = styled(({ ...props }) => <span {...props} />)`
-  export const StyledTextContainer = styled("span")\`
+export const SpanText = styled("span")`
   color: ${theme.colors.white};
   border: 0px;
   margin: 0px;
   padding: 0px;
 `;
 
-export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
-  export const StyledTextContainer = styled("span")\`
+export const SpanContainer = styled("span")`
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -209,8 +207,7 @@ export const SpanContainer = styled(({ ...props }) => <span {...props} />)`
   max-width: 100%;
 `;
 
-export const OptimisationImage = styled(({ ...props }) => <Image {...props} />)`
-  export const StyledTextContainer = styled("Image")\`
+export const OptimisationImage = styled("img")`
   display: block;
   max-width: 100%;
   width: initial;

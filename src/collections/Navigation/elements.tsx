@@ -13,3 +13,6 @@ export const StyledNavigationContent = styled("p")`
     color: ${theme.colors.yellow};
   }
 `;
+
+export const StyledNavigationContainer = styled("p")``;
+export const StyledNavigationContentContainer = styled("p")``;

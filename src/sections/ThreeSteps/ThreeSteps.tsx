@@ -1,4 +1,5 @@
 import * as S from "./elements";
+import { Steps } from "collections";
 
 export const ThreeSteps = ({ steps, ...props }) => {
   return (
@@ -10,7 +11,7 @@ export const ThreeSteps = ({ steps, ...props }) => {
       </S.StyledTitleStepsContainer>
       <S.StyledStepsContainer {...props}>
         {steps.map(i => (
-          <S.Steps
+          <Steps
             id={i.id}
             image={i.image}
             title={i.title}

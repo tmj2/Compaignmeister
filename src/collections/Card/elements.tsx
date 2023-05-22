@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { SectionContainer } from "components";
 import { theme } from "styles";
 
 export const StyledCardTitle = styled("h2")`
@@ -10,7 +9,7 @@ export const StyledCardTitle = styled("h2")`
   margin-bottom: 1.25rem;
 `;
 
-export const StyledCardContainer = styled("SectionContainer")`
+export const StyledCardContainer = styled("div")`
   gap: 1.25rem;
   flex-direction: row;
   flex-basis: 50%;

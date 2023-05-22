@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { SectionContainer } from "components";
+import styled, { css } from "styled-components";
+import { FormInput, SectionContainer } from "components";
 import { theme } from "styles";
 
-export const StyledContainer = styled("SectionContainer")`
+export const StyledContainer = styled("div")`
   // max-width: 1440px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;

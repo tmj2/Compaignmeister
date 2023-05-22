@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { H1, SectionContainer } from "components";
 import { theme } from "styles";
 
-export const StyledContainer = styled("SectionContainer")`
+export const StyledContainer = styled("div")`
   // max-width: 1440px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -16,7 +16,7 @@ export const StyledContainer = styled("SectionContainer")`
   position: relative;
 `;
 
-export const StyledStepsTitle = styled("H1")`
+export const StyledStepsTitle = styled("h1")`
   color: ${theme.colors.white};
   line-height: 38.4px;
   font-weight: 500;
