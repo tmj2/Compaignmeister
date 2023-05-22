@@ -1,6 +1,7 @@
 import * as S from "./elements";
 //import { HelloForm } from "../../collections";
 import Image from "next/image";
+import { ContactForm } from "../../collections";
 
 export const Hero = ({ ...props }) => {
   return (
@@ -17,6 +18,9 @@ export const Hero = ({ ...props }) => {
           We provide you and your teams with actionable insights to optimise your campaigns before,
           during and after its runtime across all channels, brands and countries.
         </S.StyledDescription>
+        <S.StyledFormContainer>
+          <ContactForm />
+        </S.StyledFormContainer>
       </S.StyledTextContainer>
       <S.StyledImageContainer>
         <S.ShaddowHeroImg></S.ShaddowHeroImg>

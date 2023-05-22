@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import { SectionContainer, H1 } from "components";
 import { theme } from "styles";
 import { prop } from "dom7";
-import Image from "next/dist/client/image";
 
 export const StyledSubscribeContainer = styled("div")`
   margin-left: 0px;
   margin-right: 0px;
-  flex-direction: row;
+  flex-direction: column;
   //max-width: 100%;
   margin-top: 3rem;
   padding-left: 2.5rem;
@@ -16,12 +14,13 @@ export const StyledSubscribeContainer = styled("div")`
   align-items: center;
   width: 100%;
   display: flex;
+  position: relative;
   @media (min-width: 768px) {
     margin-bottom: 5rem;
   }
 `;
 
-export const StyledTitle = styled("h1")`
+export const StyledTitle = styled("h2")`
   color: ${theme.colors.yellow};
   font-size: 32px;
   font-weight: 500;
@@ -31,10 +30,12 @@ export const StyledTitle = styled("h1")`
   z-index: 10;
 `;
 
-export const StyledTextContainer = styled("div")`
+export const StyledFormContainer = styled("div")`
   color: ${theme.colors.white};
   font-family: "Barlow", Arial, sans-serif;
-  width: 544px;
+  width: 501px;
+  //padding: 1.25rem;
+  border-radius: 1rem;
   z-index: 20;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@ export const StyledTextContainer = styled("div")`
 export const StyledImageSubscribeContainer = styled("div")`
   top: -164px;
   left: calc(50% - 44px);
-  //  position: absolute;
+  position: absolute;
   z-index: 0;
 `;
 

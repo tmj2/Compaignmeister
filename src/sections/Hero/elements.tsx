@@ -118,3 +118,15 @@ export const HeroImage = styled("img")`
   max-height: 100%;
   vertical-align: middle;
 `;
+
+export const StyledFormContainer = styled("div")`
+  color: ${theme.colors.white};
+  font-family: "Barlow", Arial, sans-serif;
+  width: 501px;
+  //padding: 1.25rem;
+  border-radius: 1rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+`;

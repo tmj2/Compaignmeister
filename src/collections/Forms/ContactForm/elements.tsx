@@ -57,6 +57,12 @@ export const StyledInputContainer = styled("div")`
   margin-bottom: 0.5rem;
 `;
 
+export const StyledAction = styled("div")`
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5rem;
+`;
+
 export const TextInput = styled(FormInput)(
   ({ theme: { colors } }) => css`
     opacity: 70%;

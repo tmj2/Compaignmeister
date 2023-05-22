@@ -11,13 +11,14 @@ export const ContactForm = ({ ...props }: ContactFormProps) => {
       <S.Title>
         <S.SpanTitle>Join </S.SpanTitle>for more information and access
       </S.Title>
-
-      <S.StyledInputContainer>
-        <S.TextInput placeholder={"Enter email"} control={control} name='email' />
-      </S.StyledInputContainer>
-      <S.Button variant='primary' type='submit'>
-        Join
-      </S.Button>
+      <S.StyledAction>
+        <S.StyledInputContainer>
+          <S.TextInput placeholder={"Enter email"} control={control} name='email' />
+        </S.StyledInputContainer>
+        <S.Button variant='primary' type='submit'>
+          Join
+        </S.Button>
+      </S.StyledAction>
       <S.Checkbox
         label={"I agree to the Terms & Conditions and the Privacy Policy"}
         control={control}
