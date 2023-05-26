@@ -1,6 +1,5 @@
 import * as S from "./elements";
 import { ContactForm } from "collections";
-import { StyledTextContainer } from "./elements";
 
 export const Subscribe = ({ ...props }) => {
   return (

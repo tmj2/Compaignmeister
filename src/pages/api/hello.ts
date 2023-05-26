@@ -1,11 +1,11 @@
 import nc from "next-connect";
 import { NextApiRequest, NextApiResponse } from "next";
-import { helloSchema } from "schemas";
+import { contactFormSchema } from "schemas";
 import { ApiResponseBase } from "types";
 import { z, ZodError } from "zod";
 
 export interface HelloRequest extends NextApiRequest {
-  body: z.infer<typeof helloSchema>;
+  body: z.infer<typeof contactFormSchema>;
 }
 
 export interface HelloResponse {
@@ -24,11 +24,11 @@ const handler = nc<HelloRequest, NextApiResponse<ApiResponseBase<HelloResponse>>
     res.status(404).end("Page not found");
   }
 }).post(async (req, res) => {
-  helloSchema.parse(req.body);
+  contactFormSchema.parse(req.body);
 
-  const { userName } = req.body;
+  const { email } = req.body;
 
-  return res.status(200).json({ message: `Hello ${userName}!` });
+  return res.status(200).json({ message: `Hello ${email}!` });
 });
 
 export default handler;
